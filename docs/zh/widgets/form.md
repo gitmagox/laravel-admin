@@ -39,7 +39,10 @@ $form->text($column, [$label]);
 // 添加提交验证规则
 $form->text($column, [$label])->rules('required|min:10');
 ```
-
+#### DesplayFromKey 不可编辑的显示框 如果 $column的值为key  显示框显示option中传入的数组对应key的值
+```php
+$form->DesplayFromKey($column[, $label])->options([1 => 'foo', 2 => 'bar', 'val' => 'Option name']);
+```
 #### select选择框
 ```php
 $form->select($column[, $label])->options([1 => 'foo', 2 => 'bar', 'val' => 'Option name']);

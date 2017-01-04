@@ -45,6 +45,10 @@ $form->text($column, [$label])->rules('required|min:10');
 ```php
 $form->select($column[, $label])->options([1 => 'foo', 2 => 'bar', 'val' => 'Option name']);
 ```
+#### DesplayFromKey
+```php
+$form->DesplayFromKey($column[, $label])->options([1 => 'foo', 2 => 'bar', 'val' => 'Option name']);
+```
 
 #### Multiple select
 ```php

@@ -50,6 +50,7 @@ use Spatie\EloquentSortable\Sortable;
  * @method Field\HasMany        hasMany($relationName, $callback)
  * @method Field\SwitchField    switch($column, $label = '')
  * @method Field\Display        display($column, $label = '')
+ * @method Field\DisplayFromKey display($column, $label = '')->option($arr)
  * @method Field\Rate           rate($column, $label = '')
  * @method Field\Divide         divide()
  * @method Field\Password       password($column, $label = '')
@@ -843,6 +844,7 @@ class Form
             'dateTimeRange'     => \Encore\Admin\Form\Field\DatetimeRange::class,
             'decimal'           => \Encore\Admin\Form\Field\Decimal::class,
             'display'           => \Encore\Admin\Form\Field\Display::class,
+            'DisplayFromKey'    => \Encore\Admin\Form\Field\DisplayFromKey::class,
             'divider'           => \Encore\Admin\Form\Field\Divide::class,
             'divide'            => \Encore\Admin\Form\Field\Divide::class,
             'editor'            => \Encore\Admin\Form\Field\Editor::class,
